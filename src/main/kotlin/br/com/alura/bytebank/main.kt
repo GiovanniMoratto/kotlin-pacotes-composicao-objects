@@ -16,10 +16,8 @@ fun main() {
 
         override fun autentica(senha: Int) = this.senha == senha
     }
-
     val sistemaInterno = SistemaInterno()
     sistemaInterno.entra(fran, 1000)
-
     println("nome do cliente ${fran.nome}")
 
     val giovanni = Cliente(nome = "Giovanni", cpf = "", senha = 1)
@@ -28,5 +26,5 @@ fun main() {
 
     testaContasDiferentes()
 
-    println("Total de contas: $totalContas")
+    println("Total de contas: ${Conta.total}")
 }
