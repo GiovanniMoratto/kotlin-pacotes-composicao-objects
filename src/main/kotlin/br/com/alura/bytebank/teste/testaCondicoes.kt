@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.teste
+
 /**
  *@Author giovanni.moratto
  */

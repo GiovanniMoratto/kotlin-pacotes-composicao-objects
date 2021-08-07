@@ -1,5 +1,7 @@
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+package br.com.alura.bytebank.teste
+
+import br.com.alura.bytebank.modelo.ContaCorrente
+import br.com.alura.bytebank.modelo.ContaPoupanca
 
 /**
  *@Author giovanni.moratto

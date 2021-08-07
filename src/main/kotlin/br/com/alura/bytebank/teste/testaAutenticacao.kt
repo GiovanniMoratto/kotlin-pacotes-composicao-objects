@@ -1,7 +1,9 @@
-import modelo.Cliente
-import modelo.Diretor
-import modelo.Gerente
-import modelo.SistemaInterno
+package br.com.alura.bytebank.teste
+
+import br.com.alura.bytebank.modelo.Cliente
+import br.com.alura.bytebank.modelo.Diretor
+import br.com.alura.bytebank.modelo.Gerente
+import br.com.alura.bytebank.modelo.SistemaInterno
 
 /**
  *@Author giovanni.moratto

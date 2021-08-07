@@ -1,5 +1,6 @@
-import modelo.Cliente
-import novomodelo.Cliente as NovoCliente
+package br.com.alura.bytebank
+
+import br.com.alura.bytebank.modelo.Cliente
 
 /**
  *@Author giovanni.moratto
@@ -7,5 +8,4 @@ import novomodelo.Cliente as NovoCliente
 
 fun main() {
     val cliente = Cliente(nome = "Giovanni", cpf = "", senha = 1)
-    val clienteNovo = NovoCliente()
 }

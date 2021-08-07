@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.Conta
+package br.com.alura.bytebank.modelo
 
 /**
  *@Author giovanni.moratto
