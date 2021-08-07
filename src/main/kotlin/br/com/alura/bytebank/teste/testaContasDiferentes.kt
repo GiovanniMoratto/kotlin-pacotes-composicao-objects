@@ -1,5 +1,6 @@
 package br.com.alura.bytebank.teste
 
+import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
 
@@ -9,11 +10,23 @@ import br.com.alura.bytebank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = "Giovanni",
+        titular = Cliente(
+            nome = "Giovanni",
+            cpf = "111.111.111-11",
+            senha = 1
+        ),
         numero = 1000
     )
+    println("titular")
+    println("nome do titular ${contaCorrente.titular.nome}")
+    println("cpf do titular ${contaCorrente.titular.cpf}")
+
     val contaPoupanca = ContaPoupanca(
-        titular = "Fran",
+        titular = Cliente(
+            nome = "Fran",
+            cpf = "",
+            senha = 2
+        ),
         numero = 1001
     )
 
@@ -31,11 +44,11 @@ fun testaContasDiferentes() {
 
     contaCorrente.transfere(100.0, contaPoupanca)
 
-    println("saldo corrente após tranferir para poupança: ${contaCorrente.saldo}")
+    println("saldo corrente após transferir para poupança: ${contaCorrente.saldo}")
     println("saldo poupança após receber transferência: ${contaPoupanca.saldo}")
 
     contaPoupanca.transfere(200.0, contaCorrente)
 
-    println("saldo poupança após tranferir para corrente: ${contaPoupanca.saldo}")
+    println("saldo poupança após transferir para corrente: ${contaPoupanca.saldo}")
     println("saldo corrente após receber transferência: ${contaCorrente.saldo}")
 }
